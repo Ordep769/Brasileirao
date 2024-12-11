@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-right">
+            <ul>
+                <li><a class="g">globo.com</a></li>
+                <li><a class="r">g1</a></li>
+                <li><a class="ge">ge</a></li>
+                <li><a class="gs">gshow</a></li>
+                <li><a class="gl">globoplay</a></li>
+                <li><a class="c">cartola</a></li>
+                <li><a class="s">sportv</a></li>
+            </ul>
+        </div>
+        <div class="container-left">
+            <ul class="user-options">
+                <li><a class="assine-ja">Assine já</a></li>
+            </ul>
+            <button class="globo-button">
+                <div class="image-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </div>
+                <span>Conta Globo</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="navegacao-brasileirao-left">
+        <button class="menu-button">MENU</button>
+        <a class="logo">ge
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield" viewBox="0 0 16 16">
+                <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+            </svg>
+        </a>
+        <span class="titulo">BRASILEIRÃO SÉRIE A</span>
+    </div>
+
+    <div class="navegacao-brasileirao-right">
+        <ul class="-navegacao-brasileirao-links">
+            <li><a>classificação</a></li>
+            <li><a>simulador</a></li>
+            <li><a>vídeos</a></li>
+            <li><a>seja pro</a></li>
+            <li><a>VAR</a></li>
+        </ul>
+        <div class="procurar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.442 1.196a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+            </svg>
+            <input type="text" placeholder="BUSCAR">
+        </div>
+    </div>
+
+    <h2 class="titulo-tabela">TABELA</h2>
+
+    <div class="tabelas-container">
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>CLASSIFICAÇÃO</th>
+                    <th>P</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                    <th>%</th>
+                    <th>ÚLT. JOGOS</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-dados">
+            </tbody>
+        </table>
+
+        <div class="jogos">
+            <div class="jogos">
+                <div>JOGOS</div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                  </svg>30ª RODADA<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg></div>
+                <div>SAO <img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg" width="28" height="28" alt="SAO"> X <img src="https://s.sde.globo.com/media/organizations/2021/09/04/vasco_SVG.svg" width="28" height="20" alt=>VAS</div>
+                <div>FLU <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Fluminense_FC_escudo.png" width="28" height="28" alt="FLU"> X <img src="https://gremio.blob.core.windows.net/imgs-site/upload-area-LogoGremio.jpg" width="28" height="28" alt=GRE>GRE</div>
+                <div>INT <img src="https://sismf.museudofutebol.org.br/anexos/imagem/475783/w:640/h:640/c:0" width="28" height="28" alt="INT"> X <img src="https://www.criciuma.com.br/includes/inc_nav/imgs/brand.png" width="28" height="28" alt=CRI>CRI</div>
+                <div>CAP <img src="https://www.athletico.com.br/wp-content/themes/hurricane/assets/images/logo-cap.png" width="28" height="28" alt="INT"> X <img src="https://cdn.api-futebol.com.br/escudos/638d34bb4bf99.svg" width="28" height="28" alt=CRI>VIT</div>
+                <div>JUV <img src="https://s.sde.globo.com/media/organizations/2021/04/29/Juventude-2021-01.svg" width="28" height="28" alt="INT"> X <img src="https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_96x96.png" width="28" height="28" alt=CRI>FOR</div>
+    
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        window.onload = function() {
+            $.ajax({
+                url: "https://api.api-futebol.com.br/v1/campeonatos/10/tabela",
+                headers: { "Authorization": "Bearer test_26258b714b61af179f6c7a5e882e28" },
+                type: "GET",
+                success: function(data) {
+                    preencherTabela(data);
+                },
+                error: function(error) {
+                    console.log("Erro na requisição:", error);
+                    alert("Erro na requisição: " + error.toString());
+                }
+            });
+        };
+
+        function preencherTabela(dados) {
+            var tabela = $("#tabela-dados").empty();
+
+            dados.forEach(function(time) {
+                var ultimosJogos = time.ultimos_jogos.map(function(resultado) {
+                    return `<span style="color: ${resultado === 'v' ? 'green' : 'red'};">●</span>`;
+                }).join(" ");
+
+                tabela.append(`
+                    <tr>
+                        <td><span class="posicao">${time.posicao}</span> ${time.time.nome_popular}</td>
+                        <td>${time.pontos}</td>
+                        <td>${time.jogos}</td>
+                        <td>${time.vitorias}</td>
+                        <td>${time.empates}</td>
+                        <td>${time.derrotas}</td>
+                        <td>${time.gols_pro}</td>
+                        <td>${time.gols_contra}</td>
+                        <td>${time.saldo_gols}</td>
+                        <td>${time.aproveitamento}</td>
+                        <td>${ultimosJogos}</td>
+                    </tr>
+                `);
+            });
+        }
+    </script>
+</body>
+</html>
